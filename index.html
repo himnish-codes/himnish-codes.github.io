@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Himnish's Trophy Room</title>
+    <style>
+/* ==================== GLOBAL STYLES ==================== */
+body {
+    background-color: #0d0e12; /* Deep matte black */
+    color: #ffffff; /* Crisp white text */
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 24px;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 48px;
+    padding: 20px;
+}
+
+header h1 {
+    color: #00ffcc; /* Neon Cyan */
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgba(0, 255, 204, 0.2);
+}
+
+header p {
+    color: #94a3b8; /* Cool gray subtitle */
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+/* ==================== GALLERY DISPLAY ==================== */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ==================== TROPHY CARDS ==================== */
+.card {
+    background-color: #161822; /* Dark slate card background */
+    border: 2px solid #242936; /* Subtle border */
+    border-radius: 14px;
+    padding: 16px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), 
+                border-color 0.3s ease, 
+                box-shadow 0.3s ease;
+}
+
+/* Hover Glow Effects */
+.card:hover {
+    transform: translateY(-6px);
+    border-color: #00ffcc; /* Glow Cyan on hover */
+    box-shadow: 0 8px 24px rgba(0, 255, 204, 0.15);
+}
+
+/* Specific Card Layout adjustments */
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    background-color: #0a0b0f;
+    border-radius: 8px;
+    border: 1px solid #1f2330;
+}
+
+.card h3 {
+    color: #f8fafc;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 16px 0 6px 0;
+    text-align: center;
+}
+
+.card p {
+    color: #64748b;
+    font-size: 0.85rem;
+    margin: 0;
+    font-weight: 500;
+}
+</style>
+
+</head>
+<body>
+
+    <header>
+        <h1>Himnish's Digital Trophy Room</h1>
+        <p>10th Grade | Aspiring Computer Science Student</p>
+    </header>
+
+    <main class="gallery">
+        <!-- ==================== TECH CERTIFICATIONS ==================== -->
+        <div class="card tech">
+            <img src="cisco/cisco_1.jpg" alt="Cisco Introduction to Cybersecurity Certificate">
+            <h3>Introduction to Cybersecurity</h3>
+            <p>Official Course Completion | Cisco Academy</p>
+        </div>
+
+        <div class="card tech">
+            <img src="cisco/cisco_2.jpg" alt="Cisco Cybersecurity Badge Verification">
+            <h3>Cybersecurity Badge Verification</h3>
+            <p>Verified Credential | Cisco Networking Academy</p>
+        </div>
+
+        <!-- ==================== CIVIC & GENERAL KNOWLEDGE ==================== -->
+        <div class="card civic">
+            <img src="mygov/space_day.jpg" alt="National Space Day Quiz">
+            <h3>National Space Day Quiz</h3>
+            <p>Issued by MyGov & ISRO</p>
+        </div>
+
+        <div class="card civic">
+            <img src="mygov/ayushman.jpg" alt="Ayushman Bharat Quiz">
+            <h3>Ayushman Bharat PM-JAY Quiz</h3>
+            <p>Issued by MyGov & NHA</p>
+        </div>
+
+        <div class="card civic">
+            <img src="mygov/bharatiya_gyan.jpg" alt="Bharatiya Gyan Quiz">
+            <h3>Bharatiya Gyan Quiz</h3>
+            <p>Ecology & Agriculture Assessment</p>
+        </div>
+
+        <div class="card civic">
+            <img src="mygov/bhagat_singh.jpg" alt="Shaheed Bhagat Singh Quiz">
+            <h3>Shaheed Bhagat Singh Legacy Quiz</h3>
+            <p>Issued by MyGov</p>
+        </div>
+
+        <div class="card civic">
+            <img src="mygov/human_rights.jpg" alt="Human Rights Quiz">
+            <h3>Human Rights Quiz</h3>
+            <p>National Human Rights Commission</p>
+        </div>
+
+        <!-- ==================== GEOGRAPHY & TRIVIA BADGES ==================== -->
+        <div class="card trivia">
+            <img src="sporcle/baby_steps.jpg" alt="Baby Steps Badge">
+            <h3>Baby Steps Badge</h3>
+            <p>Foundational Trivia Milestones</p>
+        </div>
+
+        <div class="card trivia">
+            <img src="sporcle/first_course.jpg" alt="First Course Badge">
+            <h3>First Course Badge</h3>
+            <p>Initial Subject Mastery Assessment</p>
+        </div>
+
+        <div class="card trivia">
+            <img src="sporcle/happy_hour.jpg" alt="Happy Hour Badge">
+            <h3>Happy Hour Badge</h3>
+            <p>Timed Speed Challenge Milestone</p>
+        </div>
+
+        <div class="card trivia">
+            <img src="sporcle/kayak_racecar_tacocat.jpg" alt="Palindrome Badge">
+            <h3>Kayak Racecar Tacocat</h3>
+            <p>Wordplay & Linguistics Challenge</p>
+        </div>
+
+        <div class="card trivia">
+            <img src="sporcle/newbie.jpg" alt="Newbie Badge">
+            <h3>Newbie Milestone</h3>
+            <p>Platform Platform Induction Badge</p>
+        </div>
+
+        <div class="card trivia">
+            <img src="sporcle/overload.jpg" alt="Overload Badge">
+            <h3>Overload Badge</h3>
+            <p>High-Density Data Processing Challenge</p>
+        </div>
+
+        <div class="card trivia">
+            <img src="sporcle/passage_to_india.jpg" alt="Passage to India Badge">
+            <h3>Passage To India</h3>
+            <p>Advanced National Geography & Heritage</p>
+        </div>
+
+        <div class="card trivia">
+            <img src="sporcle/sample_platter.jpg" alt="Sample Platter Badge">
+            <h3>Sample Platter</h3>
+            <p>Multi-Disciplinary Concept Testing</p>
+        </div>
+
+        <div class="card trivia">
+            <img src="sporcle/sporcle_siesta.jpg" alt="Sporcle Siesta Badge">
+            <h3>Sporcle Siesta Badge</h3>
+            <p>Consistency & Platform Engagement</p>
+        </div>
+
+        <div class="card trivia">
+            <img src="sporcle/the_conqueror.jpg" alt="The Conqueror Badge">
+            <h3>The Conqueror</h3>
+            <p>Global Geopolitical Map Completion</p>
+        </div>
+
+        <div class="card trivia">
+            <img src="sporcle/you_go_glen_coco.jpg" alt="You Go Glen Coco Badge">
+            <h3>You Go Glen Coco</h3>
+            <p>Advanced Cinema & Media Data Recall</p>
+        </div>
+    </main>
+
+</body>
+</html>
+
